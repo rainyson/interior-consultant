@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styles */
+html,
+body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.main {
+  background: #181719;
+  width: 100%;
+  /* color: white; */
+}
+/* Start Nav Styles */
+.main__nav {
+  padding: 1rem 1.5rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__nav .main__nav__logo {
+  width: 50%;
+}
+
+.main__nav .main__nav__menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.main__nav .main__nav__menu .main__nav__menu__toggle {
+  display: block;
+  width: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.main__nav__menu__toggle:focus {
+  outline: none;
+}
+
+.main__nav
+  .main__nav__menu
+  .main__nav__menu__toggle
+  .main__nav__menu__toggle__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: #fff;
+  display: block;
+  margin: 0.4rem 0;
+  color: #fff;
+}
+
+.main__nav .main__nav__menu .main__nav__menu__list {
+  display: none;
+  font: 500 1.125rem "Montserrat";
+}
+
+.main__nav__menu__list .main__nav__menu__list__item {
+  display: inline-block;
+  padding-bottom: 0.1rem;
+}
+
+.main__nav__menu__list .main__nav__menu__list__item--first {
+  font-weight: 700;
+}
+
+.main__nav__logo .main__nav__logo__btn {
+  font: 200 0.875rem "Crimson Pro";
+  padding: 0.4rem;
+  background: inherit;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.main__mobile__nav {
+  display: none;
+  background: #181719;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height:100vh;
+}
+
+.main__mobile__nav__list {
+  list-style: none;
+  width: 90%;
+  height: 91%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  padding: 0;
+}
+
+.main__mobile__nav__list__item {
+  margin: 1rem 0;
+}
+
+.main__mobile__nav__list__item a {
+  font: 500 1.125rem "Montserrat";
+}
+
+.main__mobile__nav__list__item--first a {
+  font-weight: 700;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.main__mobile__nav__close {
+  width: 100%;
+  height: 9%;
+  padding-right: 1rem;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main__mobile__nav__close__btn {
+  background: transparent;
+  border: none;
+  color: white;
+}
+/* End Nav Styles */
+
+/* Start Content Styles */
+.main .main__content {
+  width: 100%;
+  padding: 0 1.5rem;
+}
+
+.main__content .main__content__intro {
+  margin: 2.5rem 0;
+  width: 100%;
+}
+
+.main__content__intro .main__content__intro__header {
+  font: 500 2.25rem Lora;
+}
+
+.main__content__intro .main__content__intro__desc {
+  font: 400 1.5rem "Montserrat";
+  margin-top: 2rem;
+}
+
+.main__content__intro .main__content__intro__link {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.main__content__intro
+  .main__content__intro__link
+  .main__content__intro__link__text {
+  font: 700 1.125rem "Montserrat";
+}
+
+.main__content__intro
+  .main__content__intro__link
+  .main__content__intro__link__arrow {
+  margin-left: 1rem;
+}
+
+.main__content .main__content__portfolio {
+  width: 100%;
+  position: relative;
+}
+
+.main__content .main__content__portfolio .main__content__portfolio__design {
+  width: 100%;
+}
+
+.main__content
+  .main__content__portfolio
+  .main__content__portfolio__design
+  .main__content__portfolio__design__img {
+  width: 100%;
+}
+
+.main__content__portfolio__designer {
+  width: 85%;
+  background: #181719;
+  box-shadow: 1px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 12.1rem;
+  right: 1rem;
+}
+
+.main__content__portfolio
+  .main__content__portfolio__designer
+  .main__content__portfolio__designer__profile {
+  width: 100%;
+  padding: 1rem 0 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__content__portfolio__designer
+  .main__content__portfolio__designer__profile
+  .main__content__portfolio__designer__profile__pic {
+  width: 13%;
+}
+
+.main__content__portfolio__designer
+  .main__content__portfolio__designer__profile
+  .main__content__portfolio__designer__profile__pic
+  img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.main__content__portfolio__designer
+  .main__content__portfolio__designer__profile
+  .main__content__portfolio__designer__profile__info {
+  width: 83%;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.main__content__portfolio__designer
+  .main__content__portfolio__designer__profile
+  .main__content__portfolio__designer__profile__info
+  .main__content__portfolio__designer__profile__info__name {
+  font-size: 0.875rem;
+}
+
+.main__content__portfolio__designer
+  .main__content__portfolio__designer__profile
+  .main__content__portfolio__designer__profile__info
+  .main__content__portfolio__designer__profile__info__duty {
+  font-size: 0.75rem;
+  color: #828282;
+  margin-top: 0.5rem;
+}
+
+.main__content__portfolio
+  .main__content__portfolio__designer
+  .main__content__portfolio__designer__desc {
+  width: 100%;
+  font: 700 1.5rem "Lora";
+  padding: 1.5rem 3rem 2rem 1.5rem;
+}
+/* End Content Styles */
+
+/* Start Footer Styles */
+.main__footer {
+  width: 100%;
+  margin-top: 13rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  color: #a9a9a9;
+  font: 0.825rem "Montserrat";
+}
+
+.main__footer .main__footer__content {
+  font-weight: 500;
+}
+
+.main__footer .main__footer__username {
+  font-weight: 700;
+}
+/* End Footer Styles */
+
+@media (min-width: 40rem) {
+  /* Start Nav Styles */
+  .main__nav {
+    padding: 2.5rem 4rem;
+  }
+
+  .main__nav .main__nav__menu {
+    display: block;
+  }
+
+  .main__nav .main__nav__menu .main__nav__menu__toggle {
+    display: none;
+  }
+
+  .main__nav .main__nav__menu .main__nav__menu__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .main__nav__menu__list .main__nav__menu__list__item--first {
+    border-bottom: 2px solid #fff;
+  }
+  /* End Nav Styles */
+
+  /* Start Content Styles */
+  .main .main__content {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+
+  .main__content .main__content__intro {
+    margin: 0;
+    width: 37%;
+  }
+
+  .main__content .main__content__intro .main__content__intro__header {
+    font-size: 3rem;
+  }
+
+  .main__content .main__content__portfolio {
+    width: 55%;
+  }
+
+  .main__content .main__content__portfolio .main__content__portfolio__design {
+    width: 100%;
+  }
+
+  .main__content__portfolio__designer {
+    width: 55.5%;
+    top: 27rem;
+    right: 2rem;
+  }
+
+  .main__content
+    .main__content__portfolio
+    .main__content__portfolio__design
+    .main__content__portfolio__design__img {
+    width: 100%;
+  }
+  /* End Content Styles */
+}
